@@ -1,0 +1,72 @@
+body {
+    background-image: url('https://i.postimg.cc/mD98L7ST/tjh4va4qsu371.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0d0d0d;
+    font-family: 'Arial', sans-serif;
+    color: #c0c0c0;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    /* Smooth, translucent appearance */
+    background-color: rgba(42, 42, 42, 0.6);
+    backdrop-filter: blur(2px);
+    
+    /* Border, shape, and shadow */
+    border: 1px solid rgba(77, 77, 77, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    
+    /* Text and layout */
+    padding: 10px 25px;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    min-width: 120px;
+    
+    /* Transitions for a cool effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgba(77, 77, 77, 0.8);
+    border-color: rgba(224, 224, 224, 0.8);
+    box-shadow: 0 0 15px rgba(224, 224, 224, 0.5), 0 0 20px rgba(224, 224, 224, 0.3);
+    transform: translateY(-2px);
+}
+
+.disclaimer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%; /* Position the left edge at 50% from the left */
+    transform: translateX(-50%); /* Move it back by half its own width to truly center it */
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px #000000;
+    width: 100%; /* Ensure it spans the full width for text-align to work */
+    text-align: center; /* Center the text within the div */
+    padding: 0 10px; /* Add some padding to the sides */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
